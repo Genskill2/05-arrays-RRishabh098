@@ -2,23 +2,7 @@
 #include <assert.h>
 
 
-int factors(int num, int factors[]){
-  int primes[6] = {2, 3, 5, 7, 11, 13};
-  int index_factors = 0, index_primes = 0;
-  int count_factors = 0;
-
-  while (num > 1){
-    if(num % primes[index_primes] == 0){
-      factors[index_factors++] = primes[index_primes];
-      count_factors++;
-      num /= primes[index_primes];
-    }
-    else
-      index_primes++;
-  }
-  
-  return count_factors;
-}
+int factors(int , int []);
 
 int main(void) {
   int ret[100] = {0};
